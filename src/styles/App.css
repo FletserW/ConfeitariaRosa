@@ -1,0 +1,38 @@
+@import "tailwindcss";
+.bg-pink-bg {
+  background-color: #ffb7c2; /* Cor personalizada */
+}
+input:focus {
+  outline: none;
+  border-color: #ff6b81;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff4766;
+}
+/* Define a animação de rolagem */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Classe para permitir o scroll horizontal */
+.scrolling-wrapper {
+  display: flex;
+  animation: scroll 60s linear infinite;
+}
+
+@media screen and (max-width: 768px) {
+  .scrolling-wrapper {
+    animation: scroll 40s linear infinite;
+  }
+}
